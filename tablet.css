@@ -1,0 +1,65 @@
+.productive > img {
+    width: 40%;
+}
+.productive-text h1 {
+    padding: 0;
+}
+
+.card-group .card {
+    padding: 30px 25px 25px;
+}
+.card p {
+    font-size: 13px;
+}
+.card .user-profile {
+    align-items: normal;
+}
+.user-profile > div small {
+    font-size: 10px;
+}
+
+main .access {
+    padding: 40px 60px 50px;
+}
+.access form {
+    flex-wrap: wrap;
+}
+form .field {
+    width: 100%;
+}
+form input[type='submit'] {
+    width: 100%;
+}
+
+main .access {
+    bottom: -175px;
+}
+
+footer {
+    padding: 200px 30px 40px;
+}
+footer > img {
+    width: 200px;
+    margin: 60px 0 0 20px;
+}
+footer > div {
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.main-container1 {
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 50%
+}
+.main-container1 :where(.d2, .d3) img {
+    transform: translateY(3.5px);
+}
+footer .main-container2 {
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 50%;
+}
+footer .main-container3 {
+    width: 100%;
+    justify-content: center;
+}

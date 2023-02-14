@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #c9c9c9;
+}
+
+header {
+    background: url('images/bg-curvy-desktop.svg') no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    background-color: hsl(217, 28%, 15%);
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 60px 0;
+}
+
+header nav .navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navigation li {
+    list-style: none;
+}
+.navigation li a {
+    color: #c9c9c9;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+.navigation li a:hover,
+.navigation li a:focus {
+    text-decoration: underline;
+}
+
+header .intro {
+    text-align: center;
+}
+.intro img {
+    width: 40%;
+    margin-top: 40px;
+}
+
+.intro .text-content {
+    padding: 30px 26% 100px;
+}
+.text-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+.text-content p {
+    font-size: 16px;
+    margin: 40px 10% 30px;
+}
+.btn {
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    width: 260px;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 50px;
+    background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+.btn:hover {
+    background: hsl(177, 57%, 70%);
+}
+
+main {
+    padding: 60px 90px;
+    position: relative;
+    background: hsl(218, 28%, 13%);
+}
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px;
+}
+.features .feature-box {
+    width: 400px;
+    text-align: center;
+}
+.feature-box h2 {
+    margin: 25px 0 10px;
+}
+
+main .productive {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 120px 0;
+}
+.productive-text h1 {
+    padding-right: 26%;
+}
+.productive-text p {
+    margin: 30px 0;
+}
+.productive a {
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    font-size: 15px;
+}
+.productive a:hover {
+    color: #f3f3f3;
+    border-bottom-color: #f3f3f3;
+}
+.productive i {
+    position: relative;
+}
+.productive i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0.2;
+    background: #f3f3f3;
+}
+.productive a:hover > i::before {
+    visibility: visible;
+}
+
+.testimonials {
+    margin-bottom: 300px;
+}
+.testimonials .card-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    z-index: 10;
+}
+.testimonials .card-group::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -35px;
+    left: -8px;
+    width: 55px;
+    height: 45px;
+    background: url('images/bg-quotes.png') no-repeat;
+}
+.card-group .card {
+    width: 400px;
+    border-radius: 4px;
+    padding: 40px 30px 25px;
+    background: hsl(219, 30%, 18%);
+    box-shadow: 12px 8px 5px hsl(219, 30%, 18%, 0.25)
+}
+.card p {
+    font-size: 15px;
+}
+.card .user-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.user-profile > div small {
+    font-weight: 700;
+    color: #c9c9c9;
+}
+
+main .access {
+    position: absolute;
+    width: 62%;
+    text-align: center;
+    left: 50%;
+    bottom: -130px;
+    padding: 40px 100px 50px;
+    background: hsl(217, 28%, 15%);
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.37);
+}
+.access .text h1 {
+    line-height: 1;
+}
+.access .text p {
+    margin: 30px 0;
+}
+
+.access form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+form .field {
+    position: relative;
+    width: 60%;
+}
+form input[type='text'] {
+    width: 100%;
+    padding: 15px 30px;
+    outline: none;
+    color: hsl(219, 30%, 18%);
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 50px;
+}
+input[type='text']::placeholder {
+    color: #bababa;
+}
+.error-text {
+    position: absolute;
+    color: hsl(0, 100%, 63%);
+    left: 40px;
+    bottom: -25px;
+    font-size: 13px;
+    font-weight: 700;
+    visibility: hidden;
+}
+.field.error .error-text {
+    visibility: visible;
+}
+form input[type='submit'] {
+    width: 32%;
+    color: #FFF;
+}
+
+footer {
+    background: hsl(216, 53%, 9%);
+    padding: 200px 70px 40px 90px;
+}
+footer > img {
+    width: 130px;
+}
+
+footer > div {
+    display: flex;
+    gap: 150px;
+    margin: 30px 0;
+}
+
+div span {
+    font-size: 12px;
+    color: #c9c9c9;
+}
+
+.main-container1 {
+    display: flex;
+    width: 60%;
+    gap: 50px;
+}
+.main-container1 span {
+    font-size: 14px;
+}
+footer :where(.d1, .d2, .d3) {
+    display: flex;
+    gap: 15px;
+}
+.d1 img {
+    transform: translateY(4px);
+}
+.d2 {
+    margin-bottom: 15px;
+}
+
+footer .main-container2 {
+    display: flex;
+    width: 30%;
+    gap: 70px;
+}
+.main-container2 > div li {
+    list-style: none;
+    color: #c9c9c9;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.main-container2 > div li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.main-container2 > div li a:hover {
+    color: #fff;
+}
+
+.main-container3 {
+    display: flex;
+    gap: 15px;
+}
+.main-container3 li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #c9c9c9;
+    text-align: center;
+}
+.main-container3 li a i {
+    line-height: 40px;
+    user-select: none;
+    color: #c9c9c9;
+}
+.main-container3 li:hover {
+    border-color: hsl(177, 57%, 70%);
+}
+.main-container3 li:hover > a i {
+    color: hsl(177, 57%, 70%);
+}
